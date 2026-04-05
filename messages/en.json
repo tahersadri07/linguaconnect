@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "courses": "Courses",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "signUp": "Get Started",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "🎓 Free Trial Available",
+    "headline": "Speak English & Spanish with Confidence",
+    "subheadline": "Live 1:1 and group classes with expert tutors. Real conversation practice that gets you fluent — fast.",
+    "cta_primary": "Book Your Free Trial",
+    "cta_secondary": "Explore Courses",
+    "stat_students": "500+ Students",
+    "stat_classes": "1,000+ Classes",
+    "stat_rating": "4.9★ Rating",
+    "stat_countries": "12 Countries"
+  },
+  "howItWorks": {
+    "badge": "Simple Process",
+    "title": "Start Speaking in 3 Steps",
+    "subtitle": "From sign-up to your first class in minutes. No complicated setup.",
+    "step1_title": "Choose a Course",
+    "step1_desc": "Browse English and Spanish classes for every level.",
+    "step2_title": "Book a Slot",
+    "step2_desc": "Pick a time that works for you, in your timezone.",
+    "step3_title": "Join Live Class",
+    "step3_desc": "Connect via Zoom or Google Meet and start speaking."
+  },
+  "courses": {
+    "badge": "Our Courses",
+    "title": "Classes for Every Level & Goal",
+    "subtitle": "From complete beginners to advanced speakers — we have the perfect class for you.",
+    "viewAll": "View All Courses",
+    "bookNow": "Book Now",
+    "perSession": "per session",
+    "rating": "Rating"
+  },
+  "tutor": {
+    "badge": "Meet Your Tutor",
+    "title": "Learn from a Passionate Expert",
+    "bio": "I'm a certified language educator with 7+ years of experience helping adults gain real conversational fluency. My approach focuses on practical speaking skills — not grammar drills. I've helped 500+ students from 12 countries unlock their confidence in English and Spanish.",
+    "cert1": "TEFL Certified",
+    "cert2": "7+ Years Experience",
+    "cert3": "Native-Level Fluency",
+    "bookWithMe": "Book a Trial Class"
+  },
+  "testimonials": {
+    "badge": "Student Stories",
+    "title": "Real Results from Real Students"
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "q1": "Is the first class really free?",
+    "a1": "Yes! Your first 30-minute trial class is completely free. No credit card required.",
+    "q2": "How much do classes cost?",
+    "a2": "1:1 classes start at $25/hour. Group classes are $12/session. Packages of 5, 10, or 20 sessions save you up to 20%.",
+    "q3": "What technology do I need?",
+    "a3": "Just a computer or phone with a camera and internet connection. We use Zoom or Google Meet — both are free to join.",
+    "q4": "Can I cancel or reschedule?",
+    "a4": "Yes, you can cancel or reschedule for free up to 24 hours before your class. After that, the session credit is used.",
+    "q5": "What levels do you teach?",
+    "a5": "All levels from complete beginner (A1) to advanced (C2). We'll place you in the right class after a quick assessment.",
+    "q6": "Are classes 1:1 or group?",
+    "a6": "Both! 1:1 classes are 60 minutes with your dedicated tutor. Group classes are 45 minutes with up to 6 students.",
+    "q7": "What time zones do you cover?",
+    "a7": "Classes are available Monday–Saturday, 8 AM–9 PM EST. All times display in your local timezone automatically.",
+    "q8": "Can my child join?",
+    "a8": "Yes! We offer classes for students aged 8 and up. Please mention your child's age when booking."
+  },
+  "cta": {
+    "title": "Ready to Start Speaking?",
+    "subtitle": "Join 500+ students who've unlocked their confidence. Your free trial is waiting.",
+    "button": "Book Your Free Trial Now"
+  },
+  "footer": {
+    "tagline": "Speak the world's languages with confidence.",
+    "courses": "Courses",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  }
+}

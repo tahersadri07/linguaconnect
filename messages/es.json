@@ -1,0 +1,91 @@
+{
+    "nav": {
+        "courses": "Cursos",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "signIn": "Iniciar Sesión",
+        "signUp": "Comenzar",
+        "dashboard": "Panel"
+    },
+    "hero": {
+        "badge": "🎓 Prueba Gratuita Disponible",
+        "headline": "Habla Inglés y Español con Confianza",
+        "subheadline": "Clases en vivo 1:1 y grupales con tutores expertos. Práctica real de conversación que te hace fluido — rápido.",
+        "cta_primary": "Reserva Tu Clase Gratis",
+        "cta_secondary": "Ver Cursos",
+        "stat_students": "500+ Estudiantes",
+        "stat_classes": "1,000+ Clases",
+        "stat_rating": "Calificación 4.9★",
+        "stat_countries": "12 Países"
+    },
+    "howItWorks": {
+        "badge": "Proceso Simple",
+        "title": "Empieza a Hablar en 3 Pasos",
+        "subtitle": "Del registro a tu primera clase en minutos. Sin configuración complicada.",
+        "step1_title": "Elige un Curso",
+        "step1_desc": "Explora clases de inglés y español para todos los niveles.",
+        "step2_title": "Reserva un Horario",
+        "step2_desc": "Elige el horario que mejor te funcione, en tu zona horaria.",
+        "step3_title": "Únete en Vivo",
+        "step3_desc": "Conéctate por Zoom o Google Meet y empieza a hablar."
+    },
+    "courses": {
+        "badge": "Nuestros Cursos",
+        "title": "Clases para Cada Nivel y Objetivo",
+        "subtitle": "Desde principiantes hasta hablantes avanzados — tenemos la clase perfecta para ti.",
+        "viewAll": "Ver Todos los Cursos",
+        "bookNow": "Reservar Ahora",
+        "perSession": "por sesión",
+        "rating": "Calificación"
+    },
+    "tutor": {
+        "badge": "Conoce a Tu Tutor",
+        "title": "Aprende de un Experto Apasionado",
+        "bio": "Soy un educador de idiomas certificado con más de 7 años de experiencia ayudando a adultos a alcanzar fluidez conversacional real. Mi enfoque se centra en habilidades prácticas de conversación, no en ejercicios gramaticales.",
+        "cert1": "Certificado TEFL",
+        "cert2": "7+ Años de Experiencia",
+        "cert3": "Fluidez de Nivel Nativo",
+        "bookWithMe": "Reserva una Clase de Prueba"
+    },
+    "testimonials": {
+        "badge": "Historias de Estudiantes",
+        "title": "Resultados Reales de Estudiantes Reales"
+    },
+    "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas Frecuentes",
+        "q1": "¿La primera clase es realmente gratuita?",
+        "a1": "¡Sí! Tu primera clase de prueba de 30 minutos es completamente gratuita. No se requiere tarjeta de crédito.",
+        "q2": "¿Cuánto cuestan las clases?",
+        "a2": "Las clases 1:1 comienzan en $25/hora. Las clases grupales son $12/sesión. Los paquetes de 5, 10 o 20 sesiones ahorran hasta un 20%.",
+        "q3": "¿Qué tecnología necesito?",
+        "a3": "Solo una computadora o teléfono con cámara y conexión a internet. Usamos Zoom o Google Meet.",
+        "q4": "¿Puedo cancelar o reagendar?",
+        "a4": "Sí, puedes cancelar o reagendar gratis hasta 24 horas antes de tu clase.",
+        "q5": "¿Qué niveles enseñas?",
+        "a5": "Todos los niveles desde principiante completo (A1) hasta avanzado (C2).",
+        "q6": "¿Las clases son 1:1 o grupales?",
+        "a6": "¡Ambas! Las clases 1:1 son 60 minutos. Las grupales son 45 minutos con hasta 6 estudiantes.",
+        "q7": "¿Qué zonas horarias cubres?",
+        "a7": "Clases disponibles de lunes a sábado, 8 AM–9 PM EST.",
+        "q8": "¿Puede unirse mi hijo?",
+        "a8": "¡Sí! Ofrecemos clases para estudiantes de 8 años en adelante."
+    },
+    "cta": {
+        "title": "¿Listo para Empezar a Hablar?",
+        "subtitle": "Únete a 500+ estudiantes que han ganado confianza. Tu prueba gratuita te espera.",
+        "button": "Reserva Tu Clase Gratis Ahora"
+    },
+    "footer": {
+        "tagline": "Habla los idiomas del mundo con confianza.",
+        "courses": "Cursos",
+        "company": "Empresa",
+        "about": "Acerca de",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "legal": "Legal",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio",
+        "rights": "Todos los derechos reservados."
+    }
+}

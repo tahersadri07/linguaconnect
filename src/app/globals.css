@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@import "tailwindcss";
+
+/* ────────────────────────────────────────────────────────────
+   Tailwind v4 Theme — use RGB tuples for opacity support
+──────────────────────────────────────────────────────────── */
+@theme {
+  /* Core palette */
+  --color-primary: 79 70 229;
+  /* #4F46E5 */
+  --color-primary-50: 238 238 255;
+  /* #EEEEFF */
+  --color-primary-100: 213 211 253;
+  --color-primary-200: 171 167 251;
+  --color-primary-400: 87 80 247;
+  --color-primary-600: 55 48 192;
+  /* #3730C0 */
+  --color-primary-700: 42 36 154;
+
+  --color-secondary: 249 115 22;
+  /* #F97316 */
+  --color-secondary-50: 255 244 238;
+  --color-secondary-100: 255 228 204;
+  --color-secondary-600: 212 90 3;
+
+  --color-cream: 250 250 245;
+  /* #FAFAF5 */
+  --color-charcoal: 30 30 46;
+  /* #1E1E2E */
+  --color-muted: 100 116 139;
+  /* #64748B  (slate) */
+  --color-success: 16 185 129;
+  /* #10B981 */
+  --color-warning: 245 158 11;
+  /* #F59E0B */
+  --color-error: 239 68 68;
+  /* #EF4444 */
+
+  /* Typography */
+  --font-family-serif: "DM Serif Display", Georgia, serif;
+  --font-family-sans: "DM Sans", system-ui, sans-serif;
+
+  /* Spacing / radii */
+  --radius-card: 20px;
+  --radius-btn: 10px;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Base Reset
+──────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #FAFAF5;
+  color: #1E1E2E;
+  font-family: "DM Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* ── Typography Scale ─────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", Georgia, serif;
+  line-height: 1.18;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5.5vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3.8vw, 2.8rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+::selection {
+  background: rgba(79, 70, 229, .14);
+}
+
+/* ────────────────────────────────────────────────────────────
+   Reusable Component Classes  (no @apply — Turbopack safe)
+──────────────────────────────────────────────────────────── */
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #4F46E5, #6366F1);
+  color: #fff;
+  font-weight: 600;
+  font-size: .9375rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(79, 70, 229, .35);
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 20px rgba(79, 70, 229, .45);
+}
+
+.btn-primary:active {
+  transform: scale(.96);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 26px;
+  background: #fff;
+  color: #4F46E5;
+  font-weight: 600;
+  font-size: .9375rem;
+  border-radius: 10px;
+  border: 2px solid #4F46E5;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s, color .2s, transform .15s;
+}
+
+.btn-secondary:hover {
+  background: #EEEEFF;
+}
+
+.btn-secondary:active {
+  transform: scale(.96);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: transparent;
+  color: #64748B;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s, background .2s;
+}
+
+.btn-ghost:hover {
+  color: #1E1E2E;
+  background: rgba(100, 116, 139, .1);
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 6px 20px rgba(79, 70, 229, .07);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(79, 70, 229, .15);
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, .7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+}
+
+/* Layout helpers */
+.container-max {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 96px 20px;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding: 96px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 112px 64px;
+  }
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.badge-primary {
+  background: rgba(79, 70, 229, .1);
+  color: #4F46E5;
+}
+
+.badge-secondary {
+  background: rgba(249, 115, 22, .12);
+  color: #D45A03;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, .12);
+  color: #059669;
+}
+
+.badge-muted {
+  background: rgba(100, 116, 139, .1);
+  color: #476280;
+}
+
+/* Input */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(100, 116, 139, .22);
+  background: #fff;
+  color: #1E1E2E;
+  font-size: .9375rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.input-field:focus {
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, .12);
+}
+
+.input-field::placeholder {
+  color: #94A3B8;
+}
+
+/* Typography helpers */
+.gradient-text {
+  background: linear-gradient(135deg, #4F46E5 0%, #818CF8 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(79, 70, 229, .13) 0%, transparent 70%),
+    linear-gradient(160deg, #EEF2FF 0%, #FFF7ED 55%, #FAFAF5 100%);
+}
+
+.section-title {
+  font-family: "DM Serif Display", Georgia, serif;
+  color: #1E1E2E;
+}
+
+.section-subtitle {
+  color: #64748B;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Scroll-in animations  (JS adds .visible)
+──────────────────────────────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Keyframe Animations
+──────────────────────────────────────────────────────────── */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatY {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-14px)
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-8px)
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0
+  }
+
+  to {
+    background-position: 200% 0
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(.92)
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+.anim-hero {
+  animation: fadeSlideUp .75s ease both;
+}
+
+.anim-hero-1 {
+  animation: fadeSlideUp .75s .1s ease both;
+}
+
+.anim-hero-2 {
+  animation: fadeSlideUp .75s .22s ease both;
+}
+
+.anim-hero-3 {
+  animation: fadeSlideUp .75s .36s ease both;
+}
+
+.anim-float {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+.anim-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.anim-scale-in {
+  animation: scaleIn .5s ease both;
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp .6s ease both;
+}
+
+.animate-fade-in {
+  animation: fadeIn .5s ease both;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
